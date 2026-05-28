@@ -10,6 +10,38 @@
     --nav-color:  rgb(10, 35, 45);
 }
 
+/* First Font: For Headings */
+@font-face {
+    font-family: 'HeadingFont';
+    src: url('Fonts/Goldman-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Second Font: For Body Text */
+@font-face {
+    font-family: 'BodyFont';
+    src: url('Fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Third Font: For Accents or Captions */
+@font-face {
+    font-family: 'AccentFont';
+    src: url('Fonts/Sono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fourth Font: Signature */
+@font-face {
+    font-family: 'SignatureFont';
+    src: url('Fonts/AlexBrush-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -43,4 +75,12 @@ main {
 
 .box:active {
     opacity: 0.4;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-family: 'SignatureFont', sans-serif;
+    margin-bottom: 2.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
 }
