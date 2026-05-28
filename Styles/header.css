@@ -1,12 +1,23 @@
 header {
-    /* position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%; */
-    background-color: #1b3147;
+    width: 100%;
+    background-color: var(--nav-color);
     color: white;
     text-align: center;
     margin: 0;
     border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 50px;
 }
 
 .name {
@@ -16,7 +27,6 @@ header {
 
 nav {
     padding: 20px;
-    background-color: rgb(84, 84, 84);
 }
 
 .menu {

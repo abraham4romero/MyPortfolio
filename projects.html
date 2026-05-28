@@ -18,7 +18,7 @@
 
     <body style="margin:0; border:0;">
         <header>
-            <!-- I think this is a comment -->
+            <img src="images/Storm Trooper.jpg" alt="logo" class="logo">
             <h1 class="name">Abraham Romero</h1>
             <nav>
                 <a class="menu" href="index.html">ABOUT</a>
@@ -29,78 +29,153 @@
                 <a class="menu" href="accomplishments.html">ACCOMPLISHMENTS</a>
             </nav>
         </header>
-        <main>
-            <table>
-                <tr>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+        <main class="container">
+            <section class="portfolio-section">
+                <h1 class="section-title">Technical Projects</h1>
+                
+                <div class="project-grid">
+                    
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Storm Trooper.jpg" alt="Arduino Project Diagram" class="card-image">
+                            
+                            <div class="card-header">
+                                <span class="project-category">Hardware & SI/PI</span>
+                                <span class="project-date">Sep 2025 – Dec 2025</span>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>4-Bit CPU</h3>
-                            <p></p>
+                        <h3 class="project-title">Arduino Uno PCB Redesign</h3>
+                        <p class="project-description">
+                            Rewired a commercial Arduino Uno with a engineering team to maximize performance by improving Signal Integrity and Power Integrity (SI/PI) factors. Followed Bogatin’s seven habits of successful PCB designers to construct a highly optimized four-layer board, successfully increasing the maximum frequency at the characteristic impedance by 1,471%.
+                        </p>
+                        <div class="tech-tags">
+                            <span>PCB Design</span>
+                            <span>SI/PI Optimization</span>
+                            <span>4-Layer Board</span>
+                            <span>Hardware</span>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>Improved Arduino</h3>
-                            <p></p>
+                        <div class="project-links">
+                            <a href="#" class="btn report">Read Project Report</a>
+                            <a href="#" class="btn github" target="_blank">GitHub</a>
+                            <a href="#" class="btn video" target="_blank">Video</a>
+                            <a href="#" class="btn docs" target="_blank">Docs</a>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>Artillery System</h3>
-                            <p></p>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Storm Trooper.jpg" alt="Arduino Project Diagram" class="card-image">
+                            
+                            <div class="card-header">
+                                <span class="project-category">Embedded Systems</span>
+                                <span class="project-date">Sep 2025 – Dec 2025</span>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+                        <h3 class="project-title">Automated Target Artillery Tank</h3>
+                        <p class="project-description">
+                            Co-developed a mobile micro-tank system capable of autonomous target detection and automated aiming tracking. Integrated an STM32 Nucleo-L476RG microcontroller alongside Arduino Uno and Leonardo boards. Managed stepper motors for precise pitch and rotational tracking, DC-driven flywheel launchers, and a custom solenoid firing mechanism.
+                        </p>
+                        <div class="tech-tags">
+                            <span>STM32</span>
+                            <span>C / C++</span>
+                            <span>Motors & Actuators</span>
+                            <span>Arduino</span>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+                        <div class="project-links">
+                            <a href="#" class="btn report">Read Project Report</a>
+                            <a href="#" class="btn github" target="_blank">GitHub</a>
+                            <a href="#" class="btn video" target="_blank">Video</a>
+                            <a href="#" class="btn docs" target="_blank">Docs</a>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Storm Trooper.jpg" alt="Arduino Project Diagram" class="card-image">
+                            
+                            <div class="card-header">
+                                <span class="project-category">Embedded Firmware</span>
+                                <span class="project-date">Jan 2025 – Apr 2025</span>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+                        <h3 class="project-title">STM32 Embedded Metronome</h3>
+                        <p class="project-description">
+                            Designed and programmed a full-featured digital metronome using STM32CubeIDE on a Nucleo-L476RG Microcontroller. Configured external hardware interrupts for 2/4, 3/4, and 4/4 time-signature switches, integrated an LCD display for live tempo visibility, and processed analog signals from a potentiometer for dynamic BPM mapping.
+                        </p>
+                        <div class="tech-tags">
+                            <span>STM32CubeIDE</span>
+                            <span>Bare-Metal C</span>
+                            <span>Interrupts</span>
+                            <span>Peripherals</span>
                         </div>
-                    </td>
-                    <td>
-                        <div class="project">
-                            <img src="">
-                            <h3>OneNote</h3>
-                            <p></p>
+                        <div class="project-links">
+                            <a href="#" class="btn report">Read Project Report</a>
+                            <a href="#" class="btn github" target="_blank">GitHub</a>
+                            <a href="#" class="btn video" target="_blank">Video</a>
+                            <a href="#" class="btn docs" target="_blank">Docs</a>
                         </div>
-                    </td>
-                </tr>
-            </table>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Storm Trooper.jpg" alt="Arduino Project Diagram" class="card-image">
+                            
+                            <div class="card-header">
+                                <span class="project-category">Computer Architecture</span>
+                                <span class="project-date">Jan 2024 – Apr 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Custom 4-Bit CPU Logic Design</h3>
+                        <p class="project-description">
+                            Built a functioning 4-bit CPU logic simulation within Logisim from scratch. Constructed core execution blocks including D flip-flops, registers, a custom register file, multiplexers, and a central Arithmetic Logic Unit (ALU). Interfaced the architecture with sequential instruction counters, ROM storage modules, and an LCD interface programmed via Hex array values.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Logisim</span>
+                            <span>Digital Logic</span>
+                            <span>ALU Design</span>
+                            <span>Hex ROM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn report">Read Project Report</a>
+                            <a href="#" class="btn github" target="_blank">GitHub</a>
+                            <a href="#" class="btn video" target="_blank">Video</a>
+                            <a href="#" class="btn docs" target="_blank">Docs</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Storm Trooper.jpg" alt="Arduino Project Diagram" class="card-image">
+                            
+                            <div class="card-header">
+                                <span class="project-category">Software Systems</span>
+                                <span class="project-date">Jan 2024 – Apr 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Advanced Digital Notebook App</h3>
+                        <p class="project-description">
+                            Recreated a lightweight, structural desktop equivalent of Microsoft OneNote using C# and VS Code. Engineered dedicated structural spaces for categorizing class modules, quick capture notes, personal journal logs, and structured checklist tasks. Features serialization functions to dynamically load and save active logs locally.
+                        </p>
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>Object-Oriented</span>
+                            <span>Data Persistence</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn report">Read Project Report</a>
+                            <a href="#" class="btn github" target="_blank">GitHub</a>
+                            <a href="#" class="btn video" target="_blank">Video</a>
+                            <a href="#" class="btn docs" target="_blank">Docs</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
         </main>
         <footer>
             <p style="margin: 0;">Thanks for visiting!</p>

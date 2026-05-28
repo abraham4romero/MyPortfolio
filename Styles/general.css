@@ -1,3 +1,15 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --bg-color: #0f172a; 
+    --card-bg: #1e293b;        
+    --text-main: #f8fafc;      
+    --text-muted: #94a3b8;     
+    --accent: #38bdf8;
+    --accent-dim: rgba(56, 189, 248, 0.1);
+    --border-color: #334155;  
+    --nav-color:  rgb(10, 35, 45);
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -31,21 +43,4 @@ main {
 
 .box:active {
     opacity: 0.4;
-}
-
-div.job {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid rgb(152, 152, 152);
-    box-shadow: 300px, 300px, 300px, rgba(0, 0, 0, 0.5);
-    width: 60%;
-    height: fit-content;
-    border-radius: 15px;
-}
-
-.dates {
-    font-style: italic;
-    color: rgb(35, 35, 35);
 }
