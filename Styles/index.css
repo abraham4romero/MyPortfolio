@@ -1,0 +1,81 @@
+/* --- Education Layout Container --- */
+.education-section {
+    margin-top: 60px; /* Separates the education section from your project grid */
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 20px;              /* Spacing between the full-width rows */
+}
+
+/* --- Full-Width Education Card --- */
+.education-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    transition: border-color 0.22s ease;
+}
+
+.education-card:hover {
+    border-color: var(--accent); /* Consistent subtle highlight on hover */
+}
+
+/* --- Top Row of Education Card --- */
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+
+.institution-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-family: monospace;
+}
+
+.degree-title {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: var(--accent); /* Highlights the specific degree program */
+}
+
+.education-details {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* --- Dual Degree Inner Splitting (The First Card Magic) --- */
+.degree-split {
+    display: flex;
+    gap: 32px; /* Gap between Associate's and Bachelor's descriptions */
+}
+
+.degree-block {
+    flex: 1; /* Forces both degrees to take up exactly 50% width of the card */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .degree-split {
+        flex-direction: column; /* Stacks degrees vertically on smaller mobile screens */
+        gap: 20px;
+    }
+}

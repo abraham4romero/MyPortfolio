@@ -1,6 +1,7 @@
 /* --- Global Styles & Variables --- */
 :root {
-    --bg-color: #0f172a; 
+    --bg-color: #0f172a;
+    --bg-overlay: rgba(0, 0, 0, 0.0);
     --card-bg: #1e293b;        
     --text-main: #f8fafc;      
     --text-muted: #94a3b8;     
@@ -13,7 +14,7 @@
 /* First Font: For Headings */
 @font-face {
     font-family: 'HeadingFont';
-    src: url('Fonts/Goldman-Regular.ttf') format('truetype');
+    src: url('../Fonts/SourceSerif4-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +22,7 @@
 /* Second Font: For Body Text */
 @font-face {
     font-family: 'BodyFont';
-    src: url('Fonts/Lato-Regular.ttf') format('truetype');
+    src: url('../Fonts/Lato-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +30,7 @@
 /* Third Font: For Accents or Captions */
 @font-face {
     font-family: 'AccentFont';
-    src: url('Fonts/Sono-Regular.ttf') format('truetype');
+    src: url('../Fonts/Sono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,9 +38,30 @@
 /* Fourth Font: Signature */
 @font-face {
     font-family: 'SignatureFont';
-    src: url('Fonts/AlexBrush-Regular.ttf') format('truetype');
+    src: url('../Fonts/AlexBrush-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    /* 1. Add your image file path here */
+    background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('../images/Background.jpg');
+    
+    /* 2. Scale and position the image perfectly */
+    background-size: cover;          /* Forces the image to fill the entire screen without stretching */
+    background-position:    center;     /* Centers the image on the screen */
+    background-repeat: no-repeat;    /* Prevents the image from tiling/repeating */
+    background-attachment: fixed;    /* Parallax effect: content scrolls, background stays locked */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background-color: transparent;
+    padding-left: 40px;   /* Adds spacing on the left side */
+    padding-right: 40px;  /* Adds spacing on the right side */
+    box-sizing: border-box; /* Ensures padding doesn't accidentally break your max-width calculation */
 }
 
 .center {
@@ -79,8 +101,19 @@ main {
 
 .section-title {
     font-size: 2rem;
-    font-family: 'SignatureFont', sans-serif;
+    font-family: 'HeadingFont', serif;
     margin-bottom: 2.5rem;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.5rem;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    z-index: -1;
 }
