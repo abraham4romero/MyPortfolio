@@ -210,3 +210,163 @@
     color: var(--accent);
     border-color: var(--accent);
 }
+
+
+/* --- Updated Full-Width Card (Now a Flex Row) --- */
+.education-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0; /* Clear all default padding */
+    overflow: hidden; 
+    
+    /* New: Sets up a side-by-side row layout */
+    display: flex; 
+    flex-direction: row; 
+    align-items: stretch; /* Forces the image to match the height of the text dynamically */
+    transition: border-color 0.22s ease;
+}
+
+/* --- New Text Container Wrapper --- */
+/* This handles all the internal spacing for the text blocks on the right side */
+.education-card-content {
+    flex: 1; /* Instructs the text column to take up all remaining width */
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers your content vertically relative to the image */
+}
+
+/* --- Updated Left Side Image Wrapper --- */
+.edu-image-wrapper {
+    width: 250px;       /* Fixed width for your image column */
+    min-width: 250px;   /* Prevents the image column from shrinking */
+    height: auto;       /* Allows the height to scale based on how much text is on the right */
+    background-color: #0f172a;
+}
+
+.edu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.85;      
+    transition: opacity 0.22s ease;
+}
+
+/* --- Clean Up Internal Component Padding --- */
+/* We remove the left/right padding rules we added previously because .education-card-content handles it now */
+.education-header,
+.degree-split,
+.education-card > .degree-title,
+.education-card > .education-details {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.education-header {
+    margin-top: 0; /* Reset top margin since it is wrapped inside the padded content box */
+}
+
+
+
+
+/* --- View Credentials Button Layout --- */
+.show-diploma-btn {
+    align-self: flex-start; /* Prevents the button from stretching full width */
+    margin-top: 16px;
+    background-color: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.show-diploma-btn:hover {
+    background-color: var(--accent-dim);
+}
+
+/* --- Dialog Modal Window styling --- */
+.diploma-modal {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0;
+    background-color: var(--card-bg);
+    max-width: 90vw;
+    max-height: 85vh;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    overflow: visible; /* Allows the close button to pop slightly off the frame edge */
+}
+
+/* Smoothly blurs and darkens the entire portfolio background when open */
+.diploma-modal::backdrop {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Document Target Image */
+.diploma-preview {
+    max-width: 100%;
+    max-height: 75vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Top Right Floating Close Button */
+.close-modal-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: #ef4444; /* Dark red delete color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.close-modal-btn:hover {
+    background: #dc2626;
+}
+
+
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column; /* Stacks the image back on top when the screen is narrow */
+    }
+    
+    .edu-image-wrapper {
+        width: 100%;       /* Image takes full width on mobile */
+        min-width: 100%;
+        height: 160px;     /* Sets a fixed banner height for mobile views */
+    }
+
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .degree-split {
+        flex-direction: column; 
+        gap: 20px;
+    }
+}

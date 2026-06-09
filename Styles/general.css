@@ -45,7 +45,7 @@
 
 body {
     /* 1. Add your image file path here */
-    background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('../images/Background.jpg');
+    background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('../Images/Background.jpg');
     
     /* 2. Scale and position the image perfectly */
     background-size: cover;          /* Forces the image to fill the entire screen without stretching */

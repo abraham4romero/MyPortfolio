@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="Styles/header.css">
         <link rel="stylesheet" href="Styles/footer.css">
         <link rel="stylesheet" href="Styles/index.css">
+        <link rel="stylesheet" href="Styles/education.css">
     </head>
 
     <body style="margin:0; border:0;">
@@ -23,75 +24,192 @@
             <h1 class="name">Abraham Romero</h1>
             <nav>
                 <a class="menu" href="index.html">ABOUT</a>
-                <a class="menu" href="education.html">EDUCATION</a>
                 <a class="menu" href="professional-experience.html">PROFESSIONAL EXPERIENCE</a>
                 <a class="menu" href="projects.html">PROJECTS</a>
-                <a class="menu" href="skill-sets.html">SKILL SETS</a>
-                <a class="menu" href="accomplishments.html">ACCOMPLISHMENTS</a>
+                <a class="menu" href="resume.html">RESUME</a>
             </nav>
         </header>
         <main class="container">
+
             <h1></h1>
             <img src="">
-            <h2>Bio</h2>
+
+            <h1 class="section-title">Bio</h1>
             <p></p>
-            <h2>Contact</h2>
+
+            <h1 class="section-title">Contact</h1>
             <p></p>
+
             <section class="education-section">
-                <h2 class="section-title">Education</h2>
-                
+                <h1 class="section-title">Education</h1>
+
                 <div class="education-timeline">
                     
                     <div class="education-card">
                         <div class="edu-image-wrapper">
-                            <img src="university-campus-or-logo.jpg" alt="University Campus" class="edu-image">
+                            <img src="Images/BYUI.jpg" alt="BYUI Logo" class="edu-image">
                         </div>
-                        <div class="education-header">
-                            <span class="institution-name">Brigham Young University &mdash; Idaho</span>
-                            <span class="timeline-date">2024 – 2027</span>
-                        </div>
-                        
-                        <div class="degree-split">
-                            <div class="degree-block">
-                                <h3 class="degree-title">B.S. in Computer Engineering</h3>
-                                <p class="education-details">Focus on embedded firmware, digital systems design, and advanced logic simulation. GPA: 3.95 / 4.00</p>
+                            <div class="education-card-content">
+                                <div class="education-header">
+                                    <span class="institution-name">Brigham Young University &mdash; Idaho</span>
+                                    <span class="timeline-date">2024 – 2027</span>
+                                </div>
+                                
+                                <div class="degree-split">
+                                    <div class="degree-block">
+                                        <h3 class="degree-title">B.S. in Computer Engineering</h3>
+                                        <span class="timeline-date">Present</span>
+                                        <p class="education-details">Focus on embedded firmware, digital systems design, and advanced logic simulation. GPA: 3.95 / 4.00</p>
+                                        <button class="btn show-diploma-btn">View Credentials</button>
+
+                                        <dialog class="diploma-modal">
+                                            <div class="modal-content">
+                                                <button class="close-modal-btn">&times;</button>
+                                                <img src="path-to-your-diploma-image.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                    <div class="degree-block">
+                                        <h3 class="degree-title">A.A.S. in Electrical and Computer Engineering</h3>
+                                        <span class="timeline-date">Dec 2025</span>
+                                        <p class="education-details">Core fundamentals in object-oriented programming, data structures, and discrete mathematics.</p>
+                                        <button class="btn show-diploma-btn">View Credentials</button>
+
+                                        <dialog class="diploma-modal">
+                                            <div class="modal-content">
+                                                <button class="close-modal-btn">&times;</button>
+                                                <img src="path-to-your-diploma-image.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                    <div class="degree-block">
+                                        <h3 class="degree-title">Tau Beta Pi</h3>
+                                        <span class="timeline-date">Jun 2025 - Present</span>
+                                        <p class="education-details">Member of the national honor society for engineering and science students.</p>
+                                        <button class="btn show-diploma-btn">View Credentials</button>
+
+                                        <dialog class="diploma-modal">
+                                            <div class="modal-content">
+                                                <button class="close-modal-btn">&times;</button>
+                                                <img src="path-to-your-diploma-image.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <div class="degree-block">
-                                <h3 class="degree-title">A.A.S. in Electrical and Computer Engineering</h3>
-                                <p class="education-details">Core fundamentals in object-oriented programming, data structures, and discrete mathematics.</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="education-card">
                         <div class="edu-image-wrapper">
-                            <img src="university-campus-or-logo.jpg" alt="University Campus" class="edu-image">
+                            <img src="Images/DavisTech.png" alt="Davis Tech Logo" class="edu-image">
                         </div>
-                        <div class="education-header">
-                            <span class="institution-name">Davis Technical College</span>
-                            <span class="timeline-date">2023 – 2024</span>
-                        </div>
-                        <h3 class="degree-title">Certificate in Automation and Robotics</h3>
-                        <p class="education-details">Intensive hands-on certification program focused on bare-metal C development, real-time operating systems (RTOS), and hardware circuit debugging.</p>
+                                <div class="education-card-content">
+                                    <div class="education-header">
+                                        <span class="institution-name">Davis Technical College</span>
+                                        <span class="timeline-date">2023 – 2024</span>
+                                    </div>
+                                    <div class="degree-split">
+                                        <div class="degree-block">
+                                            <h3 class="degree-title">Certificate in Automation and Robotics</h3>
+                                            <p class="education-details">Intensive hands-on certification program focused on bare-metal C development, real-time operating systems (RTOS), and hardware circuit debugging.</p>
+                                            <button class="btn show-diploma-btn">View Credentials</button>
+
+                                            <dialog class="diploma-modal">
+                                                <div class="modal-content">
+                                                    <button class="close-modal-btn">&times;</button>
+                                                    <img src="Images/Certificate in Automation and Robotics.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                                </div>
+                                            </dialog>
+                                        </div>
+                                        <div class="degree-block">
+                                            <h3 class="degree-title">National Technical Honor Society</h3>
+                                            <p class="education-details">Member of the National Technical Honor Society for outstanding academic achievement in technical fields.</p>
+                                            <button class="btn show-diploma-btn">View Credentials</button>
+
+                                            <dialog class="diploma-modal">
+                                                <div class="modal-content">
+                                                    <button class="close-modal-btn">&times;</button>
+                                                    <img src="Images/National Technical Honor Society.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                                </div>
+                                            </dialog>
+                                        </div>
+                                    </div>
+                                </div>
                     </div>
 
                     <div class="education-card">
                         <div class="edu-image-wrapper">
-                            <img src="university-campus-or-logo.jpg" alt="University Campus" class="edu-image">
+                            <img src="Images/FHS.jpg" alt="Farmington High School Logo" class="edu-image">
                         </div>
-                        <div class="education-header">
-                            <span class="institution-name">Farmington High School</span>
-                            <span class="timeline-date">Graduated 2021</span>
+                        <div class="education-card-content">
+                            <div class="education-header">
+                                <span class="institution-name">Farmington High School</span>
+                                <span class="timeline-date">2018 – 2021</span>
+                            </div>
+                            <h3 class="degree-title">High School Diploma</h3>
+                            <p class="education-details">Graduated with honors. Robotics club lead and electronics hobbyist track.</p>
+                            <button class="btn show-diploma-btn">View Credentials</button>
+
+                            <dialog class="diploma-modal">
+                                <div class="modal-content">
+                                    <button class="close-modal-btn">&times;</button>
+                                    <img src="path-to-your-diploma-image.jpg" alt="Official Diploma Credential" class="diploma-preview">
+                                </div>
+                            </dialog>
                         </div>
-                        <h3 class="degree-title">High School Diploma</h3>
-                        <p class="education-details">Graduated with honors. Robotics club lead and electronics hobbyist track.</p>
                     </div>
 
                 </div>
             </section>
+
+            <h1 class="section-title">Skills</h1>
+            <p></p>
+
+            <h1 class="section-title">Accomplishments</h1>
+            <p></p>
+
         </main>
         <footer>
             <p style="margin: 0;">Thanks for visiting!</p>
         </footer>
+        <script>
+            // 1. Find every single "View Credentials" button on the entire page
+            const openButtons = document.querySelectorAll('.show-diploma-btn');
+
+            openButtons.forEach(button => {
+                // 2. Find the parent element that holds BOTH this button and its specific modal
+                const parentContainer = button.parentElement;
+                
+                // 3. Find the modal that belongs exclusively to this button
+                const modal = parentContainer.querySelector('.diploma-modal');
+                const closeBtn = modal ? modal.querySelector('.close-modal-btn') : null;
+
+                if (modal && closeBtn) {
+                    // Open this specific modal
+                    button.addEventListener('click', () => {
+                        modal.showModal();
+                    });
+
+                    // Close this specific modal
+                    closeBtn.addEventListener('click', () => {
+                        modal.close();
+                    });
+
+                    // Close if clicking the dark background overlay
+                    modal.addEventListener('click', (e) => {
+                        const dialogDimensions = modal.getBoundingClientRect();
+                        if (
+                            e.clientX < dialogDimensions.left ||
+                            e.clientX > dialogDimensions.right ||
+                            e.clientY < dialogDimensions.top ||
+                            e.clientY > dialogDimensions.bottom
+                        ) {
+                            modal.close();
+                        }
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
